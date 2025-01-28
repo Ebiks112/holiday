@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+    stages{
+        stage("checkout"){
+            steps{
+                echo "checkout the project fast"
+            }
+        }
+        
+        stage("test"){
+            steps{
+                echo "carry out unit testing"
+            }
+        }
+    }
+}
